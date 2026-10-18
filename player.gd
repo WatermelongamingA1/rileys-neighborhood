@@ -11,7 +11,7 @@ var save_scale : Vector2
 
 
 const GRAVITY = 650.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -450.0
 const RUN_SPEED = 250.0
 const GROUND_ACCELERATION = 800.0
 const GROUND_FRICTION = 400.0
