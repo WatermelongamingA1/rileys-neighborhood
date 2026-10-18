@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5c21p51e66h5"
-path="res://.godot/imported/concreteAutoTile2.png-35e187e0b1eac67ccd112d300173fa8a.ctex"
+uid="uid://crfsimcvqfjsg"
+path="res://.godot/imported/riley_concrete_autotile.png-66268ade1ec5e6a21a9e07a37e32bbb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://concreteAutoTile2.png"
-dest_files=["res://.godot/imported/concreteAutoTile2.png-35e187e0b1eac67ccd112d300173fa8a.ctex"]
+source_file="res://riley_concrete_autotile.png"
+dest_files=["res://.godot/imported/riley_concrete_autotile.png-66268ade1ec5e6a21a9e07a37e32bbb1.ctex"]
 
 [params]
 

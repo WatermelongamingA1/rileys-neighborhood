@@ -1,6 +1,26 @@
 [gd_scene format=3 uid="uid://cslgsdroomsvp"]
 
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_netps"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_netps"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_e3syd"]
+sky_material = SubResource("ProceduralSkyMaterial_netps")
+
+[sub_resource type="Environment" id="Environment_1grxq"]
+background_mode = 2
+sky = SubResource("Sky_e3syd")
+
 [node name="3dRoomTest" type="Node3D" unique_id=1697210721]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=949747695]
+environment = SubResource("Environment_1grxq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=941218054]
+transform = Transform3D(-0.33216113, -0.7981485, 0.502621, 0, 0.5328763, 0.84619313, -0.94322264, 0.28107247, -0.17700079, 0, 0, 0)
+shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2009026109]
 transform = Transform3D(1, -1.1924881e-08, 4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1.1924879e-08, -1, -4.371139e-08, 0, 1.4499998, 0)
@@ -16,3 +36,11 @@ height = 1.2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
 use_collision = true
 size = Vector3(10.7, 0.4, 14.900001)
+
+[node name="ProtoController" parent="." unique_id=1774580177 instance=ExtResource("1_netps")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.924386)
+input_left = "left"
+input_right = "right"
+input_forward = "up"
+input_back = "down"
+input_jump = "jump"
